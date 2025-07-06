@@ -1,0 +1,12 @@
+{
+  "time_to_play": 350,
+  "playground_size_w":250,
+  "playground_size_h":250,
+  "score_to_pass": 20,
+  "food_1": 5,
+  "food_2": 0,
+  "food_3": 0,
+  "garbage_1": 0,
+  "garbage_2": 0,
+  "garbage_3": 0
+}

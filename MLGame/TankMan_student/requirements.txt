@@ -1,0 +1,11 @@
+pytmx == 3.31
+mlgame == 10.4.5.2
+numpy==1.21 
+pandas==1.4.1
+gymnasium==1.0.0
+stable_baselines3==2.4.0
+rich==13.9.4
+pettingzoo==1.23
+supersuit==3.8
+tensorboard==2.18.0
+tqdm==4.67.0

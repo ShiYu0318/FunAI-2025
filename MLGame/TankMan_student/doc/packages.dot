@@ -1,0 +1,36 @@
+digraph "packages" {
+rankdir=BT
+charset="utf-8"
+"MLGame.games.Game.src" [color="black", label="MLGame.games.Game.src", shape="box", style="solid"];
+"MLGame.games.Game.src.BattleMode" [color="black", label="MLGame.games.Game.src.BattleMode", shape="box", style="solid"];
+"MLGame.games.Game.src.Bullet" [color="black", label="MLGame.games.Game.src.Bullet", shape="box", style="solid"];
+"MLGame.games.Game.src.SingleMode" [color="black", label="MLGame.games.Game.src.SingleMode", shape="box", style="solid"];
+"MLGame.games.Game.src.I_Commander" [color="black", label="MLGame.games.Game.src.I_Commander", shape="box", style="solid"];
+"MLGame.games.Game.src.Wall" [color="black", label="MLGame.games.Game.src.Wall", shape="box", style="solid"];
+"MLGame.games.Game.src.PacPlayer" [color="black", label="MLGame.games.Game.src.PacPlayer", shape="box", style="solid"];
+"MLGame.games.Game.src.Props" [color="black", label="MLGame.games.Game.src.Props", shape="box", style="solid"];
+"MLGame.games.Game.src.Station" [color="black", label="MLGame.games.Game.src.Station", shape="box", style="solid"];
+"MLGame.games.Game.src.Game" [color="black", label="MLGame.games.Game.src.Game", shape="box", style="solid"];
+"MLGame.games.Game.src.TiledMap" [color="black", label="MLGame.games.Game.src.TiledMap", shape="box", style="solid"];
+"MLGame.games.Game.src.Player" [color="black", label="MLGame.games.Game.src.Player", shape="box", style="solid"];
+"MLGame.games.Game.src.collide_hit_rect" [color="black", label="MLGame.games.Game.src.collide_hit_rect", shape="box", style="solid"];
+"MLGame.games.Game.src.env" [color="black", label="MLGame.games.Game.src.env", shape="box", style="solid"];
+"MLGame.games.Game.src.sound_controller" [color="black", label="MLGame.games.Game.src.sound_controller", shape="box", style="solid"];
+"MLGame.games.Game.src.test_case" [color="black", label="MLGame.games.Game.src.test_case", shape="box", style="solid"];
+"MLGame.games.Game.src.BattleMode" -> "MLGame.games.Game.src.Bullet" [arrowhead="open", arrowtail="none"];
+"MLGame.games.Game.src.BattleMode" -> "MLGame.games.Game.src.SingleMode" [arrowhead="open", arrowtail="none"];
+"MLGame.games.Game.src.BattleMode" -> "MLGame.games.Game.src.collide_hit_rect" [arrowhead="open", arrowtail="none"];
+"MLGame.games.Game.src.Bullet" -> "MLGame.games.Game.src.env" [arrowhead="open", arrowtail="none"];
+"MLGame.games.Game.src.SingleMode" -> "MLGame.games.Game.src.TiledMap" [arrowhead="open", arrowtail="none"];
+"MLGame.games.Game.src.SingleMode" -> "MLGame.games.Game.src.env" [arrowhead="open", arrowtail="none"];
+"MLGame.games.Game.src.Wall" -> "MLGame.games.Game.src.Props" [arrowhead="open", arrowtail="none"];
+"MLGame.games.Game.src.Wall" -> "MLGame.games.Game.src.env" [arrowhead="open", arrowtail="none"];
+"MLGame.games.Game.src.Station" -> "MLGame.games.Game.src.env" [arrowhead="open", arrowtail="none"];
+"MLGame.games.Game.src.Game" -> "MLGame.games.Game.src.BattleMode" [arrowhead="open", arrowtail="none"];
+"MLGame.games.Game.src.Game" -> "MLGame.games.Game.src.sound_controller" [arrowhead="open", arrowtail="none"];
+"MLGame.games.Game.src.Player" -> "MLGame.games.Game.src.PacPlayer" [arrowhead="open", arrowtail="none"];
+"MLGame.games.Game.src.Player" -> "MLGame.games.Game.src.env" [arrowhead="open", arrowtail="none"];
+"MLGame.games.Game.src.collide_hit_rect" -> "MLGame.games.Game.src.Station" [arrowhead="open", arrowtail="none"];
+"MLGame.games.Game.src.collide_hit_rect" -> "MLGame.games.Game.src.env" [arrowhead="open", arrowtail="none"];
+"MLGame.games.Game.src.sound_controller" -> "MLGame.games.Game.src.env" [arrowhead="open", arrowtail="none"];
+}

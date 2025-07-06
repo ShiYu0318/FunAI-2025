@@ -1,0 +1,41 @@
+{
+  "game_name": "swimming_squid",
+  "version": "2.5.0b7",
+  "url": "https://github.com/PAIA-Playful-AI-Arena/swimming_squid",
+  "description": "這是一個魷魚吃東西小遊戲，除了讓你熟習所有基本操作，也是 PAIA 的遊戲教學範例",
+  "logo": [
+    "./asset/logo.png",
+    "https://raw.githubusercontent.com/PAIA-Playful-AI-Arena/swimming_squid/main/asset/logo.png"
+  ],
+  "user_num": {
+    "min": 1,
+    "max": 1
+  },
+  "game_params": [
+    {
+      "name": "level",
+      "verbose": "內建關卡編號",
+      "type": "int",
+      "min": -1,
+      "max": 100,
+      "default": 1,
+      "help": "選定內建關卡，請注意，使用此設定將會覆蓋掉其他關卡設定，預設為 -1 不選擇任何關卡。"
+    },    {
+      "name": "level_file",
+      "verbose": "匯入關卡檔案",
+      "type": "path",
+      "default": "",
+      "help": "可匯入自定義的關卡資料，請參考內建範例的資料格式來設定。使用此設定會覆蓋掉其他關卡設定，也不會使用關卡編號，也不會自動進入下一關。"
+    },
+    {
+      "name": "contest",
+      "verbose": "競賽模式",
+      "type": "int",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "help": "競賽模式"
+    }
+
+  ]
+}

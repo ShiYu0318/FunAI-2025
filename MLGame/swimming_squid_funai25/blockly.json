@@ -1,0 +1,45 @@
+{"INIT_INFO": [
+        ["ai_name", "name of ai", "AI編號"]
+    ],
+    "GAME_STATUS": [
+        ["GAME_ALIVE", "alive", "存活"],
+        ["GAME_PASS", "pass", "通關"],
+        ["GAME_OVER", "over", "失敗"]
+    ],
+    "SCENE_INFO": [
+        ["scene_info['frame']", "# frame", "# 幀數"],
+        ["scene_info['status']", "game status", "遊戲狀態"],
+        ["scene_info['self_x']", "x coordinate of squid", "玩家角色的中心 x 座標"],
+        ["scene_info['self_y']", "y coordinate of squid", "玩家角色的中心 y 座標"],
+        ["scene_info['self_w']", "width of squid", "玩家角色的寬度"],
+        ["scene_info['self_h']", "height of squid", "玩家角色的高度"],
+        ["scene_info['self_lv']", "level of squid", "玩家角色的等級"],
+        ["scene_info['self_vel']", "velocity of squid", "玩家角色的速度"],
+        ["scene_info['score']", "score", "目前的分數"],
+        ["scene_info['foods']", "list of foods positions", "所有食物的位置清單"],
+        ["scene_info['score_to_pass']", "the score for next level", "通關分數"],
+        ["scene_info['env']", "the env of map", "地圖環境資訊"],
+        ["scene_info['env']['playground_size_w']", "the width of playground", "環境寬度"],
+        ["scene_info['env']['playground_size_h']", "the height of playground", "環境高度"],
+        ["scene_info['env']['top']", "the top of playground", "上邊界"],
+        ["scene_info['env']['bottom']", "the bottom of playground", "下邊界"],
+        ["scene_info['env']['left']", "the left of playground", "左邊界"],
+        ["scene_info['env']['right']", "the right of playground", "右邊界"],
+        ["scene_info['env']['time_to_play']", "the time of this game", "限制時長"],
+        ["scene_info", "dictionary of all information", "包含所有資訊的字典"]
+    ],
+    "CONSTANT": [
+
+        [30, "food lv1 size", "等級一食物的寬高度"],
+        [40, "food lv2 size", "等級二食物的高度"],
+        [50, "food lv3 size", "等級三食物的高度"]
+    ],
+    "ACTION": [
+        ["['UP']", "moving up", "向上移動"],
+        ["['DOWN']", "moving down", "向下移動"],
+        ["['LEFT']", "moving left", "向左移動"],
+        ["['RIGHT']", "moving right", "向右移動"],
+        ["['NONE']", "doing nothing", "不動作"]
+
+    ]
+}

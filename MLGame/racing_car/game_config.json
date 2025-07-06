@@ -1,0 +1,74 @@
+{
+  "game_name": "racing_car",
+  "version": "4.0.3",
+  "url": "https://github.com/PAIA-Playful-AI-Arena/racing_car",
+  "description": "來一場競速的排位賽吧！駕駛著自己的車子享受在馬路上狂飆的快感吧！注意前方與左右來車來妨礙你，閃避其他車子的步步逼近，同時還要小心速度太慢被遠遠甩在後頭喔！關卡還有金幣競爭模式，在競速之餘盡可能的去搶奪路上散落的金幣，衝向終點成為最終贏家。",
+  "logo": [
+    "./asset/logo.png",
+    "https://raw.githubusercontent.com/PAIA-Playful-AI-Arena/racing_car/main/asset/logo.png"
+  ],
+  "user_num": {
+    "min": 1,"max": 4
+  },
+  "game_params": [
+    {
+      "name": "game_type",
+      "verbose": "遊戲模式",
+      "type": "str",
+      "choices": [
+        {
+          "verbose": "NORMAL",
+          "value": "NORMAL"
+        },
+        {
+          "verbose": "COIN",
+          "value": "COIN"
+        },
+        {
+          "verbose": "RELIVE",
+          "value": "RELIVE"
+        }
+      ],
+      "help": "choose the type of game",
+      "default": "NORMAL"
+    },
+    {
+      "name": "car_num",
+      "verbose": "車子總數量",
+      "type": "int",
+      "max": 40,
+      "min": 1,
+      "default": 20,
+      "help": "set the number of car, include user and computer cars."
+    },
+    {
+      "name": "racetrack_length",
+      "verbose": "終點距離",
+      "type": "int",
+      "max": 30000,
+      "min": 1000,
+      "default": 15000,
+      "help": "set the number of car, include user and computer cars."
+    },
+    {
+      "name": "rounds",
+      "verbose": "遊戲局數",
+      "type": "int",
+      "max": 20000,
+      "min": 1,
+      "default": 1,
+      "help": "set times for restarting game."
+    },
+    {
+      "name": "sound",
+      "verbose": "遊戲音效",
+      "type": "str",
+      "choices": [
+        "on",
+        "off"
+      ],
+      "help": "'on' can turn on the sound.",
+      "default": "off"
+    }
+  ]
+}

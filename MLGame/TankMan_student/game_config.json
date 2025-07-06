@@ -1,0 +1,77 @@
+{
+  "game_name": "TankMan",
+  "version": "funai",
+  "url": "https://github.com/PAIA-Playful-AI-Arena/TankMan.git",
+  "description": "坦克人(Tank Man)，一款經典的雙人對戰遊戲，時間內率先擊殺對手獲勝，否則以分數高者獲勝，除了擊中對手外，破壞遊戲物件，以獲得更高積分。注意: 場上資源恢復皆須時間，先到者得，你需要這些補充品以提供前進和射擊的燃油和子彈。",
+  "logo": [
+    "./asset/image/TankMan.svg",
+    "https://raw.githubusercontent.com/PAIA-Playful-AI-Arena/TankMan/main/asset/image/TankMan.svg"
+  ],
+  "user_num": {
+    "min": 2,
+    "max": 6
+  },
+  "game_params": [
+    {
+      "name": "green_team_num",
+      "verbose": "A隊人數為：",
+      "type": "int",
+      "max": 5,
+      "min": 1,
+      "help": "set the number of green_team users.",
+      "default": 1
+    },
+    {
+      "name": "blue_team_num",
+      "verbose": "B隊人數為：",
+      "type": "int",
+      "max": 5,
+      "min": 1,
+      "help": "set the number of blue_team users.",
+      "default": 1
+    },
+    {
+      "name": "is_manual",
+      "verbose": "使否手動遊玩",
+      "type": "str",
+      "choices": [
+        {
+          "verbose": "是",
+          "value": "1"
+        },
+        {
+          "verbose": "否",
+          "value": ""
+        }
+      ],
+      "help": "'1' can turn on the player rotate cool down .",
+      "default": 0
+    },
+    {
+      "name": "frame_limit",
+      "verbose": "遊戲總幀數(Frame)",
+      "type": "int",
+      "max": 3000,
+      "min": 1,
+      "default": 300,
+      "help": "set the frame number of game frame limit."
+    },
+    {
+      "name": "sound",
+      "verbose": "遊戲音效",
+      "type": "str",
+      "choices": [
+        {
+          "verbose": "開",
+          "value": "on"
+        },
+        {
+          "verbose": "關",
+          "value": "off"
+        }
+      ],
+      "help": "'on' can turn on the sound.",
+      "default": "off"
+    }
+  ]
+}
